@@ -5,21 +5,21 @@
 class Shark < Formula
   desc "Task management CLI for AI-driven development workflows"
   homepage "https://github.com/jwwelbor/shark-task-manager"
-  version "1.5.3"
+  version "1.5.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.3/shark_1.5.3_darwin_amd64.tar.gz"
-      sha256 "3d81c6637047825fbd27630815dc72f3a3428e6860440ba2c0e7063b221ccd44"
+      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.4/shark_1.5.4_darwin_amd64.tar.gz"
+      sha256 "1ee6beb29d4b5e0ff14218a8584ee415b31c4fde185703079cf0dc2be80443d6"
 
       define_method(:install) do
         bin.install "shark"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.3/shark_1.5.3_darwin_arm64.tar.gz"
-      sha256 "958e0855b67845093b085757345fc3c2ba96e01ae1e09ea506fff2573f7a69f7"
+      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.4/shark_1.5.4_darwin_arm64.tar.gz"
+      sha256 "88df05ec6d33876dbbd5f22399a5ea89d116be86f3a86dfe65fa936de396efc6"
 
       define_method(:install) do
         bin.install "shark"
@@ -29,15 +29,15 @@ class Shark < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.3/shark_1.5.3_linux_amd64.tar.gz"
-      sha256 "b508d26c39bdb369fa89203e8b1ff0e28deae9f18d705b178bee671c14c6b89f"
+      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.4/shark_1.5.4_linux_amd64.tar.gz"
+      sha256 "3e2a01d0358f311c06c84bb716960d43e48048a9656c6519c5aef119812fba85"
       define_method(:install) do
         bin.install "shark"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.3/shark_1.5.3_linux_arm64.tar.gz"
-      sha256 "12cc294d6de2247bedb107e6fd55e3a69c34694994c0a3aa0eb51de3c902eb9b"
+      url "https://github.com/jwwelbor/shark-task-manager/releases/download/v1.5.4/shark_1.5.4_linux_arm64.tar.gz"
+      sha256 "06a8d7079e21c65771eae367f9368132fda39492fa19d8a3180854f7dacdf194"
       define_method(:install) do
         bin.install "shark"
       end
